@@ -1,0 +1,44 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Back to Top */
+#button {
+  display: inline-block;
+  background-color: #6366f1;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 20;
+}
+
+#button::after {
+  content: "";
+  display: block;
+  background-image: url("/src/cd-top-arrow.svg");
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  /* margin-top: %; */
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#button:active {
+  background-color: #555;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
