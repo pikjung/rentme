@@ -5,8 +5,10 @@ module.exports = {
     require('tw-elements/dist/plugin')
   ],
   theme: {
-    colors: {
-      'rentme': '#fb7f58'
+    extend: {
+      colors: {
+        'rentme': '#fb7f58',
+      }
     }
   }
 }
