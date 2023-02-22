@@ -2,6 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+#navbarent {
+  /* backdrop-filter: blur(5px); */
+  transition: 0.3s ease-in-out;
+}
+
 /* Back to Top */
 #button {
   display: inline-block;
@@ -42,3 +47,57 @@ html {
   opacity: 1;
   visibility: visible;
 }
+
+/* sidepanel */
+.sidepanel {
+  width: 0;
+  position: fixed;
+  z-index: 99;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.53);
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.53);
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #fb7f58;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.togSide {
+  width: 250px;
+}
+/* .openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+} */ ;

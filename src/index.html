@@ -11,140 +11,95 @@
     <script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
   </head>
   <body>
-    <!-- Hero -->
-    <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-      <div
-        id="navbarent"
-        class="hidden flex fixed-top mx-2 lg:mx-6 transition duration-700 bg-white z-10 justify-between items-center border-b py-4 md:py-8 mb-8 md:mb-12 xl:mb-16"
-      >
-        <!-- logo - start -->
-        <a
-          href="/"
-          class="inline-flex items-center text-black-800 text-2xl md:text-3xl font-bold gap-2.5"
-          aria-label="logo"
-        >
-          <img width="95" height="94" src="./asset/logo.png" alt="" />
-
-          RentMe
-        </a>
-        <!-- logo - end -->
-
-        <!-- nav - start -->
-        <nav class="hidden lg:flex gap-12">
-          <a href="#home" class="text-rentme text-lg font-semibold">Home</a>
-          <a
-            href="#scooter"
-            class="text-gray-600 hover:text-rentme active:text-rentme text-lg font-semibold transition duration-100"
-            >Scooter</a
-          >
-          <a
-            href="#benefits"
-            class="text-gray-600 hover:text-rentme active:text-rentme text-lg font-semibold transition duration-100"
-            >Benefits</a
-          >
-          <a
-            href="#about"
-            class="text-gray-600 hover:text-rentme active:text-rentme text-lg font-semibold transition duration-100"
-            >About</a
-          >
-        </nav>
-        <!-- nav - end -->
-
-        <!-- buttons - start -->
-        <button
-          class="hidden lg:inline-block cursor-pointer bg-rentme hover:bg-rentme active:bg-rentme focus-visible:ring ring-rentme text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModalCenter"
-        >
-          Book Now
-        </button>
-
-        <button
-          type="button"
-          class="inline-flex items-center lg:hidden bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-rentme text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2"
-        >
-          <img width="95" height="94" src="./asset/logo.png" alt="" />
-
-          Menu
-        </button>
-        <!-- buttons - end -->
-      </div>
+    <!-- sidebar -->
+    <div id="rentSidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#home">Home</a>
+      <a href="#scooter">Scooter</a>
+      <a href="#benefits">Benefit</a>
+      <a href="#about">About</a>
     </div>
+
 
     <div class="bg-white pb-6 sm:pb-8 lg:pb-12" id="home">
       <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-        <header
-          class="flex bg-white justify-between items-center border-b py-4 md:py-8 mb-8 md:mb-12 xl:mb-16"
-        >
-          <!-- logo - start -->
-          <a
-            href="/"
-            class="inline-flex items-center text-black-800 text-2xl md:text-3xl font-bold gap-2.5"
-            aria-label="logo"
+
+        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+          <div
+            id="navbarent"
+            class=" flex fixed-top mx-2 lg:mx-6 bg-white z-10 justify-between items-center border-b py-2 md:py-8 md:mb-12 xl:mb-16"
           >
-            <img width="95px" height="94px" src="./asset/logo.png" alt="" />
-
-            RentMe
-          </a>
-          <!-- logo - end -->
-
-          <!-- nav - start -->
-          <nav class="hidden lg:flex gap-12">
-            <a href="#home" class="text-rentme text-lg font-semibold">Home</a>
+            <!-- logo - start -->
             <a
-              href="#scooter"
-              class="text-gray-600 hover:text-rentme active:text-rentme text-lg font-semibold transition duration-100"
-              >Scooter</a
+              href="/"
+              class="inline-flex items-center text-black-800 text-2xl md:text-3xl font-bold gap-2.5"
+              aria-label="logo"
             >
-            <a
-              href="#benefits"
-              class="text-gray-600 hover:text-rentme active:text-rentme text-lg font-semibold transition duration-100"
-              >Benefits</a
-            >
-            <a
-              href="#about"
-              class="text-gray-600 hover:text-rentme active:text-rentme text-lg font-semibold transition duration-100"
-              >About</a
-            >
-          </nav>
-          <!-- nav - end -->
+              <img width="95" height="94" src="./asset/logo.png" alt="" />
 
-          <!-- buttons - start -->
-          <button
-            class="hidden lg:inline-block cursor-pointer bg-rentme hover:bg-rentme active:bg-rentme focus-visible:ring ring-rentme text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModalCenter"
-          >
-            Book Now
-          </button>
+              <p class="hidden lg:block">RentMe</p>
+            </a>
+            <!-- logo - end -->
 
-          <button
-            type="button"
-            class="inline-flex items-center lg:hidden bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-rentme text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              viewBox="0 0 20 20"
-              fill="currentColor"
+            <!-- nav - start -->
+            <nav class="hidden lg:flex gap-12">
+              <a href="#home" class="text-rentme text-lg font-semibold">Home</a>
+              <a
+                href="#scooter"
+                class="text-gray-600 hover:text-rentme active:text-rentme text-lg font-semibold transition duration-100"
+                >Scooter</a
+              >
+              <a
+                href="#benefits"
+                class="text-gray-600 hover:text-rentme active:text-rentme text-lg font-semibold transition duration-100"
+                >Benefits</a
+              >
+              <a
+                href="#about"
+                class="text-gray-600 hover:text-rentme active:text-rentme text-lg font-semibold transition duration-100"
+                >About</a
+              >
+            </nav>
+            <!-- nav - end -->
+
+            <!-- buttons - start -->
+            <button
+              class="hidden lg:inline-block cursor-pointer bg-rentme hover:bg-rentme active:bg-rentme focus-visible:ring ring-rentme text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModalCenter"
             >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              />
-            </svg>
+              Book Now
+            </button>
 
-            Menu
-          </button>
-          <!-- buttons - end -->
-        </header>
+            <button
+              type="button" onclick="toggleSide()"
+              class="openbtn inline-flex items-center lg:hidden bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-rentme text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              Menu
+            </button>
+            <!-- buttons - end -->
+          </div>
+        </div>
+
 
         <section
-          class="flex flex-col lg:flex-row justify-between gap-6 sm:gap-10 md:gap-16"
+          class="flex flex-col mt-[180px] lg:flex-row justify-between gap-6 sm:gap-10 md:gap-16"
         >
           <!-- content - start -->
-          <div class="xl:w-5/12 flex flex-col justify-between">
+          <div class="xl:w-5/12 flex flex-col  justify-between">
             <div></div>
 
             <div class="sm:text-center lg:text-left lg:py-12 xl:py-24">
@@ -171,7 +126,7 @@
                 >
 
                 <a
-                  href="#"
+                  href="#about"
                   class="inline-block bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-rentme text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
                   >Google Maps</a
                 >
@@ -271,7 +226,7 @@
           <!-- content - end -->
 
           <!-- image - start -->
-          <div class="xl:w-5/12 h-96 lg:h-auto xs:h-full overflow-hidden">
+          <div class="xl:w-5/12 lg:h-auto xs:h-full overflow-hidden">
             <div
               id="carouselExampleControls"
               class="carousel slide relative"
@@ -485,110 +440,121 @@
 
     <!-- Benefits  -->
     <section id="benefits">
-      <div class="bg-white py-6 sm:py-8 lg:py-12">
-        <div class="max-w-screen-xl px-4 md:px-8 mx-auto">
-          <!-- text - start -->
-          <div class="mb-8 md:mb-12">
-            <h2
-              class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6"
-            >
-              Benefits
-            </h2>
+    <h2
+      class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6"
+    >
+      Benefits
+    </h2>
 
-            <p
-              class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto"
-            >
-              Our goal is to provide good service. So we provide benefits for
-              you as follows.
-            </p>
+    <div class="flex lg max-w-screen-lg mx-auto items-center justify-center bg-white">
+
+      <div class="grid grid-cols-2 gap-2 mx-2 lg:gap-5 lg:grid-cols-4">
+        <!-- free delivery -->
+
+        <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 ">
+          <div class="h-96 w-72">
+            <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="./asset/benefits/delivery.jpg" alt="" />
           </div>
-          <!-- text - end -->
+          <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+          <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+            <h1 class="text-md lg:text-3xl font-bold text-rentme">Free Delivery</h1>
+            <p class="mb-3 text-sm lg:text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+            <!-- <button class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button> -->
+          </div>
+        </div>
 
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-8">
-            <!-- stat - start -->
-            <div
-              class="flex flex-col justify-center items-center bg-gray-100 rounded-lg p-4 lg:p-8"
-            >
-              <div
-                class="text-rentme text-xl sm:text-2xl md:text-3xl font-bold"
-              >
-                Free Delivery
-              </div>
-            </div>
-            <!-- stat - end -->
+        <!-- rain coat -->
+        <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+          <div class="h-96 w-72">
+            <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="./asset/benefits/raincoat.jpg" alt="" />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+          <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+            <h1 class="text-md lg:text-3xl font-bold text-rentme">Rain Coat</h1>
+            <p class="mb-3 text-sm lg:text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+            <!-- <button class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button> -->
+          </div>
+        </div>
 
-            <!-- stat - start -->
-            <div
-              class="flex flex-col justify-center items-center bg-gray-100 rounded-lg p-4 md:p-8"
-            >
-              <div
-                class="text-rentme text-xl sm:text-2xl md:text-3xl font-bold"
-              >
-                Rain Coat
-              </div>
-            </div>
+        <!-- 2 helmets -->
+        <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+          <div class="h-96 w-72">
+            <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="./asset/benefits/helmets.jpg" alt="" />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+          <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+            <h1 class="text-md lg:text-3xl font-bold text-rentme">2 Helmets</h1>
+            <p class="mb-3 text-sm lg:text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+            <!-- <button class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button> -->
+          </div>
+        </div>
 
-            <!-- stat - start -->
-            <div
-              class="flex flex-col justify-center items-center bg-gray-100 rounded-lg p-4 md:p-8"
-            >
-              <div
-                class="text-rentme text-xl sm:text-2xl md:text-3xl font-bold"
-              >
-                2 Helmets
-              </div>
-            </div>
-            <!-- stat - end -->
-
-            <!-- stat - start -->
-            <div
-              class="flex flex-col justify-center items-center bg-gray-100 rounded-lg p-4 md:p-8"
-            >
-              <div
-                class="text-rentme text-xl sm:text-2xl md:text-3xl font-bold"
-              >
-                Road Assistance
-              </div>
-            </div>
-            <!-- stat - end -->
+        <!-- road assists -->
+        <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+          <div class="h-96 w-72">
+            <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="./asset/benefits/ra.jpg" alt="" />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+          <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+            <h1 class="text-md lg:text-3xl font-bold text-rentme">Road Assistance</h1>
+            <p class="mb-3 text-sm lg:text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+            <!-- <button class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See More</button> -->
           </div>
         </div>
       </div>
+      <!-- <div class="fixed bottom-16">
+        <p class="font-com text-2xl font-semibold text-white">All Images are from <a href="https://unsplash.com" class="text-blue-500">Unsplash.com</a></p>
+      </div> -->
+    </div>
+
     </section>
     <!-- End Of Benefits  -->
 
+
     <!-- Footer -->
     <section id="about">
-      <div class="bg-white pt-4 sm:pt-10 lg:pt-12">
+      <div class="bg-white pt-4 sm:pt-10">
+        <div class="max-w-screen-2xl  px-6 mx-auto my-10 mb-5">
+            <h2
+              class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6"
+            >
+              Where to find us?
+            </h2>
+
+          <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126193.70643133849!2d115.09000488830422!3d-8.733893395519496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd24385cb133ded%3A0x9c6bb77d858685e1!2sRENTME%20SCOOTER%20BALI!5e0!3m2!1sid!2sid!4v1676820234816!5m2!1sid!2sid"
+                    width="100%"
+                    height="320"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+        </div>
+
         <footer class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+
           <div
-            class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 border-t gap-12 lg:gap-8 pt-10 lg:pt-12 mb-16"
+            class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 border-t gap-6 pt-10 lg:pt-12 mb-5"
           >
+            <!-- <div class="col-span-6 lg:-mt-2 mb-4">
+              <a
+                href="/"
+                class="inline-flex items-center text-black-800 text-xl md:text-2xl font-bold gap-2"
+                aria-label="logo"
+              >
+                <img width="50px" height="50px" src="./asset/logo.png" alt="" />
+
+                RentMe
+              </a>
+            </div> -->
+
             <div class="col-span-2">
               <!-- logo - start -->
-              <div class="lg:-mt-2 mb-4">
-                <a
-                  href="/"
-                  class="inline-flex items-center text-black-800 text-xl md:text-2xl font-bold gap-2"
-                  aria-label="logo"
-                >
-                  <svg
-                    width="95"
-                    height="94"
-                    viewBox="0 0 95 94"
-                    class="w-5 h-auto text-rentme"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M96 0V47L48 94H0V47L48 0H96Z" />
-                  </svg>
-
-                  RentMe
-                </a>
-              </div>
               <!-- logo - end -->
 
-              <p class="text-gray-500 sm:pr-8 mb-6">About</p>
+              <p class="text-gray-800 font-bold tracking-widest uppercase sm:pr-8 mb-2 xs:justify-center">About</p>
+              <p class="mb-6 text-justify text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis corporis facere quis, repellendus temporibus rerum, harum sunt laudantium, soluta magnam consectetur necessitatibus quidem saepe deleniti inventore ratione hic aperiam distinctio?</p>
 
               <!-- social - start -->
               <div class="flex gap-4">
@@ -679,9 +645,9 @@
                 Contact
               </div>
 
-              <p class="text-gray-500 sm:pr-8 mb-6 xs:content-center">
-                WhatsApp: <b>+6282122048462</b> <br />
-                Email: <b>fikri@gmail.com</b> <br />
+              <p class="text-gray-500 sm:pr-8 xs:content-center">
+                WhatsApp: <b>+6285951446273</b> <br />
+                Email: <b>rscooterbali@gmail.com</b> <br />
                 Loaction: <br />
                 56V6+Q5V, Jl. Bisma, Benoa, Kec. Kuta Sel., Kabupaten Badung,
                 Bali 80361
@@ -690,14 +656,16 @@
             <!-- nav - end -->
 
             <!-- nav - start -->
-            <div class="col-span-1 sm:justify-center">
-              <div
-                class="text-gray-800 font-bold tracking-widest uppercase mb-4"
+            <div class="col-span-2 justify-self-center">
+              <a
+                href="/"
+                class="inline-flex items-center text-black-800 text-xl md:text-2xl font-bold gap-2"
+                aria-label="logo"
               >
-                Maps
-              </div>
+                <img width="95px" height="94px" src="./asset/logo.png" alt="" class="lg:w-[240px] lg:h-[220px]" />
+              </a>
 
-              <nav class="flex flex-col gap-4">
+              <!-- <nav class="flex flex-col gap-4">
                 <div class="md:w-96 md:h-56 sm:w-24 sm:h-10">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126193.70643133849!2d115.09000488830422!3d-8.733893395519496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd24385cb133ded%3A0x9c6bb77d858685e1!2sRENTME%20SCOOTER%20BALI!5e0!3m2!1sid!2sid!4v1676820234816!5m2!1sid!2sid"
@@ -709,7 +677,7 @@
                     referrerpolicy="no-referrer-when-downgrade"
                   ></iframe>
                 </div>
-              </nav>
+              </nav> -->
             </div>
             <!-- nav - end -->
           </div>
@@ -741,7 +709,7 @@
             <div
               class="inline-block p-5 md:w-24 md:h-24 sm:w-5 sm:h-5 text-white"
             >
-              <a href="" target="_blank">
+              <a href="https://wa.me/6285951446273" target="_blank">
                 <img
                   src="./asset/whatsapp.png"
                   width="100%"
@@ -753,7 +721,7 @@
             <div
               class="inline-block p-5 md:w-24 md:h-24 sm:w-5 sm:h-5 text-white"
             >
-              <a href="" target="_blank">
+              <a href="mailto:rscooterbali@gmail.com" target="_blank">
                 <img
                   src="./asset/email.png"
                   width="100%"
@@ -765,7 +733,7 @@
             <div
               class="inline-block p-5 md:w-24 md:h-24 sm:w-5 sm:h-5 text-white"
             >
-              <a href="" target="_blank">
+              <a href="tel:+6285951446273" target="_blank">
                 <img src="./asset/call.png" width="100%" height="100%" alt="" />
               </a>
             </div>
@@ -775,11 +743,27 @@
     </div>
     <!-- End Of Modal -->
     <script>
-      window.addEventListener("scroll", function () {
-        var navbar = document.getElementById("navbarent");
-        // navbar.classList.toggle("hidden", window.scrollY > 0);
-        navbar.classList.toggle("hidden", window.scrollY == 0);
-      });
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          document.getElementById("navbarent").style.padding = "0px 10px";
+
+        } else {
+          document.getElementById("navbarent").style.padding = "35px 10px";
+
+        }
+      }
+
+      function closeNav() {
+       var cls = document.getElementById("rentSidepanel");
+       cls.classList.remove("togSide");
+      }
+
+      function toggleSide() {
+        var element = document.getElementById("rentSidepanel");
+        element.classList.toggle("togSide");
+      }
     </script>
     <button id="button" class="rounded-full"></button>
 
